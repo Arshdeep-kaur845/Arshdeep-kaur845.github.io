@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Employee Tables</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin:20px auto;
+            box-shadow: 2px 2px 10px gray;
+        }
+        th, td {
+           border: 1px solid black;
+           padding: 8px 12px;
+           text-align: left;
+        }
+        th {
+            background-color: yellow;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: lightyellow;
+        }
+        caption {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        tfoot td {
+            font-weight:bold;
+            background-color: yellow;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>E-mail</th>
+            <th>Years of Service</th>
+        </tr>
+        <tr><td>Joel Murach</td><td>joelmurach@yahoo.com</td><td>22</td></tr>
+        <tr><td>Anne Boehm</td><td>anne@murach.com</td><td>34</td></tr>
+        <tr><td>Zak Ruvalcaba</td><td>zak@modulemedia.com</td><td>4</td></tr>
+        <tr><td>Judy Taylor</td><td>judy@murach.com</td><td>39</td></tr>
+        <tr><td>Cyndi Vasquez</td><td>cyndi@murach.com</td><td>10</td></tr>
+        <tr><td>Kelly Slivkoff</td><td>kelly@murach.com</td><td>25</td></tr>
+        <tr><td>Juliette Baylon</td><td>juliette@murach.com</td><td>1</td></tr>
+    </table>
+    <table>
+        <caption>Employee Table</caption>
+        <tr>
+            <th>Department</th>
+            <th>Name</th>
+            <th>E-mail</th>
+            <th>Years of Service</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Editorial</td>
+            <td>Joel Murach</td>
+            <td>joelmurach@yahoo.com</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Anne Boehm</td>
+            <td>anne@murach.com</td>
+            <td>34</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Zak Ruvalcaba</td>
+            <td>zak@modulemedia.com</td>
+            <td>4</td>
+        </tr>
+        <tr class="highlight background-color: yellow">
+            <td rowspan="2">Marketing</td>
+            <td>Judy Taylor</td>
+            <td>Judy@murach.com</td>
+            <td>39</td>
+        </tr>
+        <tr>
+            <td>Cyndi Vasquez</td>
+            <td>cyndi@murach.com</td>
+            <td>10</td>
+        </tr>
+        <tr class="highlight background-color: yellow">
+            <td rowspan="2">Customer Service</td>
+            <td>Kelly Slivkoff</td>
+            <td>Kelly@murach.com</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Juliette Baylon</td>
+            <td>juliette@murach.com</td>
+            <td>1</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total years of service</td>
+                <td>105</td>
+            </tr>
+            </tfoot>
+    </table>
+</body>
+</html>
